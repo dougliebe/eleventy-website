@@ -1,0 +1,6 @@
+---
+layout: layout.html
+---
+{% for post in collections.rankings %}
+    <h1><a href="{{ post.url }}">{{ post.data.title }}</a></h1>
+{% endfor %}
