@@ -1,5 +1,5 @@
 {
-    "layout": "layout.html",
+    "layout": "page layout.html",
     "tags": "rankings",
     "permalink": "/{{ page.fileSlug }}/"
 }

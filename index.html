@@ -1,11 +1,14 @@
 ---
-layout: layout.html
+layout: layout home.html
 title: Rankings Available
 ---
+{% assign sortedPages = collections.rankings | sort: 'data.date' %}
 <ul>
-    {% for post in collections.rankings %}
+    
+<ul>
+    {% for post in sortedPages %}
         <li style="font-size: 0.5em;">
-            <h1><a href="{{ post.url }}">{{ post.data.title }}</a></h1>
+            <h1><a href="{{ post.url }}">{{ post.data.title | default: 'test' }}</a></h1>
         </li>
     {% endfor %}
 </ul>
