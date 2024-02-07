@@ -2,7 +2,7 @@
 layout: layout home.html
 title: Rankings Available
 ---
-{% assign sortedPages = collections.rankings | sort: 'data.date' %}
+{% assign sortedPages = collections.rankings | sort: 'data.date' | reverse %}
 <ul>
     
 <ul>
